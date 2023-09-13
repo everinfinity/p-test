@@ -57,5 +57,5 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
-app.use('/api', createProxyMiddleware({ target: 'https://upwork.com', changeOrigin: true }));
+app.use('/', createProxyMiddleware({ target: 'https://upwork.com', changeOrigin: true }));
 app.listen(3000);
